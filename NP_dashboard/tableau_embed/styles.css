@@ -1,0 +1,52 @@
+body {
+  /* Positioning */
+  margin-bottom: 150px;
+
+  /* Typography */
+  font-family: Verdana, sans-serif;
+
+  /* Visual */
+  background-color: #ededed;
+}
+
+
+/* ----DESCRIPTION START---- */
+.description-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: Verdana, sans-serif;
+
+  /* Typography */
+  font-size: 40px;
+  color: #1d2b68;
+}
+
+.description {
+  margin-bottom: 33px;
+  font-family: Verdana, sans-serif;
+
+  /* Typography */
+  font-size: 32px;
+  color: #1d2b68;
+}
+
+.paragraph {
+  font-family: Verdana, sans-serif;
+}
+
+.tableauPlaceholder {
+  padding: 35px;
+  margin-bottom: 33px;
+}
+
+.summaryimage {
+  margin-bottom: 33px;
+}
+
+.epa_ols {
+  margin-bottom: 33px;
+}
+
+.ue_ols {
+  margin-bottom: 33px;
+}
