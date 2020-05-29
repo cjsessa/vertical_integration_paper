@@ -77,3 +77,11 @@ body {
 .white {
   background: #fff;
 }
+
+.tableau {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:25px;
+  width: 100%;
+}
