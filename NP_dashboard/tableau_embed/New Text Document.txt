@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Opioid Prescriptions and Vertical Integration</title>
+  <!-- Bootrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<nav class="navbar topnav navbar-light navbar-expand" id="myTopnav" style="background-color: #fcfcfc;">
+  <a class = "navbar-brand" href = "./index.html">Home</a>
+  <!-- Navbar content -->
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav ">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="./introduction.html">Introduction <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./background.html">Background <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./empirical_strategy.html">Empirical Strategy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./empirical_strategy_j.html">Empirical Strategy 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Discussion.html">Discussion <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Conclusion.html">Conclusion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./visualization.html">Vizualizations</a>
+      </li>
+   
+    </ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  </div>
+</nav>
+<br></br>
+ 
+  <body>
+
+    <div class="container">
+      <!--Normally these medium columns go full wide on small screen sizes-->
+  <div class="row">
+  <div class="col-md-12">
+    <div class="box white">
+      <h1 class="description"; style="text-align:center;">Visualizations</h1>
+
+<href = "https://prod-useast-a.online.tableau.com/#/site/verticalintegration/workbooks/151704?:origin=card_share_link">
+
+
+
