@@ -36,8 +36,15 @@
         <a class="nav-link" href=".\Conclusion.html">Conclusion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=".\visualization.html">Viz & Outpu</a>
+        <a class="nav-link" href=".\visualization.html">Viz & Output</a>
       </li>
+      <div class="dropdown">
+        <button class="dropbtn">Regression</button>
+        <div class="dropdown-content">
+          <a href="margins.html">Margins</a>
+          <a href="regression.html">Regression</a>
+        </div>
+      </div>
    
     </ul>
   </div>
@@ -48,14 +55,14 @@
   </div>
 </nav>
   <body>
+<br></br>
+    <h1 class="description"; style="text-align:center;">Empirical Strategy Jie's Edits</h1>
 
     <div class="container">
       <!--Normally these medium columns go full wide on small screen sizes-->
-      <br></br>
       <div class="row">
         <div class = "col-lg-12">
         <div class="box white">
-  <h1 class="description"; style="text-align:center;">Empirical Strategy Jie's Edits</h1>
 
 <p>To estimate the effect vertical integration has on opioid prescribing rates, we use Medicare Part D prescribing rates and map in group practice information from Physician Compare, using the broadest definition of group practice by provider . To parse out vertically integrated practices from horizontally integrated practices, we divided all group practices into either horizontally or vertically integrated groups. We define vertically integrated group practices as a practice that contains at least two varied specialties, with or without the presence of nurse practitioners, which we call multi-specialty practices. Our specialties of interest are an inclusive set that are classified as either primary care, pain management, specialist , or nurse practitioner. We define horizontally integrated groups as practices with one or more of the same specialties, again with or without the presence of nurse practitioners. We separate the horizontally integrated group practices into three subcategories: primary care, pain management, and specialist practice. Finally, we use a series of two regressions, first looking only at specialty, to establish a baseline of opioid prescribing rates, and second looking at both specialty and integration type, to measure the impact integration has on prescribing rates. To validate the robustness of our results, we use a reduced sample of only nurse practitioners. Through our series of specialty and group practice classifications, we are able to syphon out the impact of vertical integration and then compare the effect vertical integration has on specialty prescribing rates.</p>
 <p>Our data has two complications inherent to our sample. First, we have a percentage dependent variable, and second, we face a selection problem with our sample as not all specialties who can prescribe do prescribe opioids (e.g. allergist), with the latter complication resulting in nearly 30% of the dependent datapoints having a zero value. To correct the sample selection problem while simultaneously adjusting the model for the bounded dependent variable, we use a two-part model that is commonly used for datasets with similar characteristics (Borislava Mihaylova, Andrew Briggs, Anthony O’Hagan 2011; Belotti et al. 2015; Leung and Yu 1996; Duan et al. 1984). We estimate separate models using a binary outcome for any opioid prescriptions (extensive margin) and use a continuous outcome variable for opioid prescribing rates among the positive values in the sample (intensive margin.) To transform the coefficients back into the original units, we apply a Duan Smearing technique , which also removes any distributional assumptions of the conditional error term (Duan et al. 1984).  </p>

@@ -36,8 +36,15 @@
         <a class="nav-link" href=".\Conclusion.html">Conclusion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=".\visualization.html">Viz & Outpu</a>
+        <a class="nav-link" href=".\visualization.html">Viz & Output</a>
       </li>
+      <div class="dropdown">
+        <button class="dropbtn">Regression</button>
+        <div class="dropdown-content">
+          <a href="margins.html">Margins</a>
+          <a href="regression.html">Regression</a>
+        </div>
+      </div>
    
     </ul>
   </div>
@@ -49,14 +56,16 @@
 </nav>
  
   <body>
+    <br></br>
+    <h1 class="description"; style="text-align:center;">Empirical Strategy</h1>
 
     <div class="container">
       <!--Normally these medium columns go full wide on small screen sizes-->
-      <br></br>
+    
       <div class="row">
         <div class = "col-lg-12">
         <div class="box white">
-  <h1 class="description"; style="text-align:center;">Empirical Strategy</h1>
+
  
     <p>To estimate the effect vertical integration has on opioid prescribing rates, we use Medicare Part D prescribing rates and map in group practice information from Physician Compare, using the broadest definition of group practice by provider . We are unable to run a standard OLS regression as our dependent variable is a percent, meaning it is bound between 0 and 1, and face a two-fold selection problem with our sample. First, our prescribing rates are based on a providers’ prescribing patterns for their patients who are in Medicare Part D, limiting our sample to patients over the age of 65 which may not be wholly representative of a providers practice. Second, not all specialties who can prescribe do prescribe opioids (e.g. allergist), resulting in nearly 30% of the dependent datapoints having a zero value. These reasons make using a standard linear regression model inappropriate. </p>
     <p>To correct the sample selection problem while simultaneously adjusting the model for the bounded dependent variable, we use a two-part model that is commonly used for datasets with similar characteristics (Borislava Mihaylova, Andrew Briggs, Anthony O’Hagan 2011; Belotti et al. 2015; Leung and Yu 1996; Duan et al. 1984). As the name suggests, our two-part model has two stages. First, we use a logistical regression to create a probability a provider prescribes an opioid. Second, we use these probabilities as a weight for each observation, and then use OLS with a logged dependent variable to calculate the coefficients (Duan et al. 1984; Belotti et al. 2015). The first stage of the model provides the extensive margin (logit model, if any opioid prescriptions) whereas the second stage provides the intensive marge (OLS, percentage of opioid prescribed, if provider prescribed at least one opioid.) To transform the coefficients back into the original units, we apply a Duan Smearing technique . An added benefit of applying this technique is that it removes any distributional assumptions of the conditional error term (Duan et al. 1984).  We will compare alternative models to the two-part model; the Heckman Selection model and a generalized linear model (GLM) with logit link and provide justifications for our selection.</p>
