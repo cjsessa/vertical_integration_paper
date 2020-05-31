@@ -7,7 +7,7 @@
   <!-- Bootrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../tableau_embed/styles.css">
 </head>
 
 <nav class="navbar topnav navbar-light navbar-expand" id="myTopnav" style="background-color: #fcfcfc;">
@@ -18,25 +18,25 @@
     <ul class="navbar-nav mr-auto nav ">
       
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\introduction.html">Introduction </a>
+        <a class="nav-link" href=".\introduction.html">Introduction </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\background.html">Background </a>
+        <a class="nav-link" href=".\background.html">Background </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\empirical_strategy.html">Empirical Strategy</a>
+        <a class="nav-link" href=".\empirical_strategy.html">Empirical Strategy</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\empirical_strategy_j.html">Empirical Strategy 2</a>
+        <a class="nav-link" href=".\empirical_strategy_j.html">Empirical Strategy 2</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\Discussion.html">Discussion </a>
+        <a class="nav-link" href=".\Discussion.html">Discussion </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\Conclusion.html">Conclusion</a>
+        <a class="nav-link" href=".\Conclusion.html">Conclusion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="..\tableau_embed\visualization.html">Vizualizations</a>
+        <a class="nav-link" href=".\visualization.html">Vizualizations</a>
       </li>
    
     </ul>
@@ -66,27 +66,27 @@
     <h4><i>General Framework</i></h4>
     <p>We apply a two-part model for each of our regressions, all regressions have the same general framework but have varied data samples and explanatory variables. The first part of the model captures the extensive margin using a dummy variable indicating that a provider has given at least one opioid prescription. The second part captures the intensive margin using the log of the percentage of opioid prescriptions.</p> 
     <p>The first part of the model is specified as logit</p>
-    <img src = "first_part.PNG" class = "center"></img>
+    <img src = "../tableau_embed/first_part.PNG" class = "center"></img>
     <p>The second part of the model is an OLS regression with a logged dependent variable</p>
-    <img src = "second_part.PNG" class = "center"></img>
+    <img src = "../tableau_embed/second_part.PNG" class = "center"></img>
     <h4><i>Full Model</i></h4>
     <p>The full two-part model is calculated using the predicted probability from the first part and used to estimate the conditional mean to the second part:</p>
-    <img src = "full_model.PNG" class = "center"></img>
+    <img src = "../tableau_embed/full_model.PNG" class = "center"></img>
     <p>When calculating the margins of the output, we transform the regressors from the log to raw value, using a Duan smearing transformation (Duan, 1984)When calculating the margins of the output, we transform the regressors from the log to raw value, using a Duan smearing transformation (Duan, 1984)</p>
     <br></br>
 
     <h4><i>Description of Model</i></h4>
     <p>Before we can estimate the impact vertical integration has on specialty prescribing rates, we first need to develop a baseline equation that modeled the effect specialty without controlling for any type of integration. We use this baseline equation to compare changes in coefficients by specialty groups for all subsequent equations:</p>
-    <img src = "equation1.PNG" class = "test"></img>
+    <img src = "../tableau_embed/equation1.PNG" class = "test"></img>
     <p>where our dependent variable, Y, is a percentage of opioid prescriptions by provider. For our specialties, we use primary care as the reference category and compare the prescribing rates of pain management specialists (M), specialists (S), and nurse practitioners (N). All other control variables, including state indicator variables and county level characteristics are designed as Z. Lastly our error term is designated as δ</p>
     <p>We find with high significance that primary care specialties have the lowest likelihood of prescribing an opioid followed by nurse practitioners, specialists, and then pain management specialists, these findings match those of previous literature (Mark et al. 2019; Pletcher et al. 2008) and unsurprisingly show that provider specialty has an impact on prescribing rates.</p>
     <p>Now that we established our baseline impact specialty has on prescribing rates and rank order of specialties, our next question is how prescribing rates change when specialties work together. We hypothesize that through spillover effects of specialties with higher baselines working with specialties of lower baselines, an individual provider prescribing rate will actually be a weighted average of the types of specialties they work with. This leads us to our second equation, which builds on equation one by adding various forms of integration:</p>
-    <img src = "equation2.PNG" class = "center"></img>
+    <img src = "../tableau_embed/equation2.PNG" class = "center"></img>
     <p>We add an inclusive set of group practices containing varied specialties to estimate the impact integration has on prescribing rates. In order to parse out vertical integration from horizontal integration, we divided group practices into either horizontally or vertically integrated classifications. Horizontally integrated group practices consist of single-specialty practices that may or may not have a nurse practitioner, these are represented by coefficients Mpractice and Spractice. Where M is single-specialty pain management practices and S is specialist practices, with single-specialty primary care practices as our reference group. Our vertically integrated group is Xpractice, which are any group practices that are some combination of M, S, and single-specialty primary care groups. Group X may or may not have nurse practitioners included</p>
     <p>By incorporating types of group practice in the regression, we find that the magnitude of all specialties, in comparison to primary care, decrease. The ranked order of specialty remains the same, except for nurse practitioners whose prescribing rates become slightly negative. We find that providers who are in specialist group practices are the least likely to prescribe opioids, followed by primary care practices (reference category), vertically integrated practices (Group X), and pain specialist practices</p>
     <p>The vertically integrated practices reside between our specialist, primary care, and pain management practices. This supports our hypothesis that prescribing rates are a weighted average of specialties that comprise the group practice.</p>
     <p>To validate the robustness of our results from equation two, we wanted to test the impact vertical integration has on one specialty type. In selecting a specialty type, it is necessary for the specialty to commonly work in a variety of settings, as selecting a specialty that works heavily in one type of integrated group practice could skew the results. In this case, nurse practitioners  were the logical choice as they operate in independent practices, under supervision of medical doctors, and a flexible specialty that can work with all other specialties. For equation three, we limit the sample to only nurse practitioners and keep all the control variables the same (by reducing the sample to nurse practitioner removes any other specialty):</p>
-    <img src = "equation3.PNG" class = "test"></img>
+    <img src = "../tableau_embed/equation3.PNG" class = "test"></img>
     <p>We find that when nurse practitioners working only with other nurse practitioners prescribe the least amount of opioid prescriptions followed by, in increasing order, nurse practitioners who work in vertically integrated systems, primary care practices (reference category), specialist practices, and pain management practices.</p>
     <p>By incorporating nurse practitioner practices, this slightly changes the ranking of the remaining group practices from regression two, switching the vertically integrated practices with the specialist practices. This supports the results that were found in equation two – vertically integrated groups are a weighted average of the various specialties they interact with
         </p>
