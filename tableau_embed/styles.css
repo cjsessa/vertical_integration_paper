@@ -30,6 +30,13 @@ body {
   color: #1d2b68;
 }
 
+.subtitle{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  color: #1d2b68;
+}
 .paragraph {
   font-family: Verdana, sans-serif;
 }
